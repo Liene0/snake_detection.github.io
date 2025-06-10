@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+        }
+        p {
+            margin-top: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting you now...</h1>
+        <p>If you are not redirected automatically, <a id="manualRedirectLink" href="#">click here</a>.</p>
+    </div>
+
+    <script>
+        // Define the URL in a JavaScript variable
+        const targetURL= "https://www.google.com"; // Change this to your desired URL
+
+        // Set the href of the manual redirect link
+        document.getElementById('manualRedirectLink').href = targetURL;
+
+        // Perform the immediate redirect
+        window.location.href = targetURL;
+    </script>
+</body>
+</html>
